@@ -15,6 +15,13 @@ const CountHits=(WrappedComponent, power) => {
             })
         }
 
+        restart=()=>
+        {
+            this.setState({
+                hits:0
+            })
+        }
+
 
         componentDidUpdate(prevProps, prevState) {
             if(this.state!==prevState){
@@ -26,8 +33,8 @@ const CountHits=(WrappedComponent, power) => {
         
 
         render() {
-
-            return <WrappedComponent addOneHit={this.addOne} hocState={this.state} {...this.props} />     
+                        
+            return <WrappedComponent restartGame={this.restart} addOneHit={this.addOne} hocState={this.state} {...this.props} />     
             
         }
     } 

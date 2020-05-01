@@ -36,21 +36,18 @@ restartFunc=(e)=>{
       
 }
 
-
-
   render() {
-     
-    const Button = (this.state.goku > 0 && this.state.vegeta > 0) ? (<button className="btn btn-secondary m-3 disabled">Recommencer</button>)
-    :(<button type="button" className="btn btn-secondary m-3" onClick={this.restartFunc.bind(this)}>Recommencer</button>);
     
+   const Button = (this.state.goku > 0 && this.state.vegeta > 0) ? (<button className="btn btn-secondary m-3 disabled">Recommencer</button>)
+    :(<button type="button" className="btn btn-secondary m-3" onClick={this.restartFunc.bind(this)}>Recommencer</button>);
     
     return (
       <div className="container text-center">
           <h1>Vegeta vs Goku</h1>
           <hr />
         <div className="row">
-          <Vegeta name="Vegeta" life={this.state.vegeta} reduceHandler={this.reduceLife} hit={this.state.coup}/>
-          <Goku name="Goku" life={this.state.goku} reduceHandler={this.reduceLife} hit={this.state.coup}/>
+          <Vegeta name="Vegeta" life={this.state.vegeta} reduceHandler={this.reduceLife}/>
+          <Goku name="Goku" life={this.state.goku} reduceHandler={this.reduceLife}/>
           
         </div> 
         <div>
