@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import profile from '../profile.png';
 
 class Profile extends Component {
     
@@ -39,6 +40,7 @@ class Profile extends Component {
             <div className="container mt-3">
                 <h1>Profile</h1>
                 <hr/>
+                <img src={profile} alt="profile-pic"/>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item"> <strong>Name: </strong> {name} </li>
                     <li className="list-group-item"> <strong>Email: </strong> {email} </li>
