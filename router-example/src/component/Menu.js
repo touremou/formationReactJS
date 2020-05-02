@@ -20,6 +20,9 @@ function Menu() {
                     <li className="nav-item">
                         <Link className="nav-link" to="/community">Community</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/users/">Profile</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
