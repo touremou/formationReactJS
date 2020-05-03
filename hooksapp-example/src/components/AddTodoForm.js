@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const AddTodoForm =({addNewTodo}) => {
 
+    useEffect(()=>{
+        document.title="TO-DO";
+    })
     const[addTodo, setAddTodo]=useState('')
 
     const handleTodo= (e)=>{
