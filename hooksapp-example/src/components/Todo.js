@@ -7,7 +7,6 @@ const Todo = () => {
    const [todos, setTodos] = useState([
         {id:1, todo: 'Acheter du lait'},
         {id:2, todo: 'Acheter du pain'},
-        {id:2, todo: 'Acheter du fromage'}
     ])
 
     const [warning,setWarning] = useState(false)
